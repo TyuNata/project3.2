@@ -3,9 +3,8 @@
 public class Main {
     public static void main(String[] args) {
         BmiService service = new BmiService();
-        int weight = 60;
-        double height = 1.65;
-        int index = (int) service.calculate(weight, height);
+
+        int index = (int) service.calculate(60, 1.65);
         System.out.println("Твой индекс массы тела: " + index);
 
     }
